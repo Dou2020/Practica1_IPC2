@@ -27,6 +27,7 @@
         }
       }
     </style>
+    <script type="text/javascript" src="usuario.js"></script>
   </head>
   <body>
     <main>
@@ -67,7 +68,7 @@
                   </div>
 
                   <div class="modal-body p-5 pt-0">
-                    <form method="POST" class="was-validated">
+                    <form method="POST" class="was-validated" onsubmit="return validarForma(this)">
                       <div class="form-floating mb-3">
                         <input
                           type="text"
@@ -161,7 +162,7 @@
                   </div>
 
                   <div class="modal-body p-5 pt-0">
-                    <form method="POST" class="was-validated">
+                    <form method="POST" class="was-validated" onsubmit="validarForma2(this)">
                       <div class="form-floating mb-3">
                         <input
                           type="text"
